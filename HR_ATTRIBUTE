@@ -1,0 +1,47 @@
+Mini Project 2: HR Attrition Analysis
+
+Industry: Human Resources Objective: Analyze employee attrition and performance trends using SQL and Python.
+
+Project Tasks
+
+· Load employee and job data from CSV using Python.
+
+· Store the data into a relational database.
+
+· Use SQL to compute attrition rates, average tenure, and department-wise trends.
+
+· Visualize attrition distribution, role stability, and demographic insights.
+
+Data Sources
+
+1. HR Dataset: https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset
+
+KPIs and Formulas
+
+KPI Description / Formula
+
+Attrition Rate (Number of Leavers / Total Employees) * 100
+
+Average Tenure AVG(YearsAtCompany)
+
+Role Stability AVG(YearsInCurrentRole) GROUP BY JobRole
+
+Department Attrition Attrition Rate GROUP BY Department
+
+Gender-wise Attrition Attrition Rate GROUP BY Gender
+
+SQL Implementation Plan
+
+· Create employees table with columns like age, department, years_at_company, attrition.
+
+· Query attrition stats and breakdowns by department, gender, and job role.
+
+· Compute averages and counts to derive KPIs.
+
+Python Implementation Plan
+
+· Load and clean data using pandas.
+
+· Perform grouping and aggregation logic in pandas.
+
+· Visualize attrition rates by role, department, gender using seaborn and matplotlib.
